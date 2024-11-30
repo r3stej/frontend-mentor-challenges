@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Live solution preview
 
-- Live Site URL: [Netlify](https://674b7fa0b97b1492026d4feb--eclectic-klepon-afbfdc.netlify.app/)
+- Live Site URL: [Netlify](https://674b94a987420fa96a4852ae--eclectic-klepon-afbfdc.netlify.app/)
 
 ### Built with
 

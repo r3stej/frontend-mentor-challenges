@@ -1,0 +1,131 @@
+/* Required Font */
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/static/Inter-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/static/Inter-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/static/Inter-Regular.ttf");
+    font-weight: 400;
+}
+
+/* Remove predefined styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style-type: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Colors */
+:root {
+    --bg-link-color: #333333;
+    --bg-card-color: #1F1F1F;
+    --bg-color: #141414;
+}
+
+/* Basic structure */
+body {
+    background-color: var(--bg-color);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+#container {
+    margin: 0 auto 0 auto;
+    max-width: 1440px;
+}
+
+/* Card styling */
+.profile-card {
+    max-width: 384px;
+    max-height: 611px;
+    border-radius: 14px;
+    background-color: var(--bg-card-color);
+    margin: 170px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+    margin-top: 24px;
+}
+
+.location {
+    font-weight: bold;
+    line-height: 1.5;
+    color: #C4F82A;
+}
+
+.role {
+    color: white;
+    line-height: 1.5;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.social-links {
+    margin-bottom: 40px;
+}
+
+.social-links a {
+    background-color: var(--bg-link-color);
+    width: 304px;
+    padding: 14px 0px 14px 0px;
+    border-radius: 8px;
+    margin-top: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.social-links a:hover {
+    background-color: #C4F82A;
+    color: var(--bg-link-color);
+}
+
+/* Required Media Quieres for mobile view */
+@media screen and (max-width: 375px) {
+    .profile-card {
+        width: 327px;
+        margin-top: 116px;
+    }
+
+    .avatar {
+        margin-top: 24px;
+    }
+
+    .social-links {
+        margin-bottom: 24px;
+    }
+}

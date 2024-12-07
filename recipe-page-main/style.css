@@ -1,0 +1,252 @@
+/* Required fonts */
+/* There is also font package available locally in the assets folder */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/* Remove predefined styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul > li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Colors */
+:root {
+    --background: #F3E5D7;
+    --font-color: #5F564D;
+    --recipe-header: #312E2C;
+    --section-header: #854632;
+}
+
+/* Basic structure */
+body {
+    min-height: 1955px; 
+    font-size: 16px;
+    font-family: "Outfit", serif;
+    background-color: var(--background);
+    color: var(--font-color);
+    
+}
+
+#container {
+    margin: 123px auto 0 auto;
+    min-width: 375px;
+    max-width: 736px;
+    background-color: #FFF;
+    border-radius: 24px;
+}
+
+/* Image preview styles */
+#img-container {
+    padding: 40px 40px 0px 40px;
+}
+
+#img-container > img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Span style for word bolding purposes */
+.bold {
+    font-weight: 700;
+    display: contents; /* This span should be visible as a plain text content */
+}
+
+/* Section header */
+.header {
+    font-family: "Young Serif", serif;
+    color: var(--section-header);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/* Style for additional div that creates padding around the section element. */
+.padding {
+    padding: 0px 40px 0px;
+}
+
+.padding:last-child {
+    padding-bottom: 40px;
+}
+/* ================================================== */
+                    /* SECTIONS */
+/* ================================================== */
+
+/* Introduction header */
+.introduction {
+    margin-top: 40px;
+    padding: 0px 40px 0px;
+}
+
+.introduction > h1 {
+    font-family: "Young Serif", serif;
+    color: var(--recipe-header);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1; /*Due to fact that this font family add its line-height property, I set it to default for better px calculation. */
+}
+
+.introduction > p {
+    padding: 24px 0px 32px;
+}
+
+.preparation-time {
+    background-color: #FFF7FB;
+    border-radius: 12px;
+    padding: 28px;
+}
+
+.preparation-time > h3 {
+    font-size: 20px;
+    color: #7A284E;
+    padding-bottom: 16px;
+    line-height: 1;  /*Due to fact that this font family add its line-height property, I set it to default for better px calculation. */
+}
+
+.preparation-time > ul > li {
+    line-height: 1.5;
+    display: flex; /*For equal word-wrap purposes on smaller screens */
+}    
+
+.preparation-time > ul > li::before {
+    content: "•"; 
+    padding: 0px 26px 0px 8px;
+    font-weight: 600;
+    color: #7A284E; 
+}
+
+.preparation-time > ul > li:first-child {
+    padding-bottom: 8px;
+}
+
+.preparation-time > ul > li:last-child {
+    padding-top: 8px;
+}
+
+/* Ingredients section */
+.ingredients {
+    padding-top: 32px;
+}
+
+.ingredients > ul {
+    padding-top: 24px;
+}
+
+.ingredients > ul > li {
+    padding-bottom: 8px;
+    display: flex; /*For equal word-wrap purposes on smaller screens */
+}
+
+.ingredients > ul > li:last-child {
+    padding-bottom: 32px;
+}
+
+.ingredients > ul > li::before {
+    content: "•"; 
+    padding: 0px 26px 0px 8px; 
+    font-weight: 600;
+    color: var(--section-header);
+}
+
+/* Instructions section */
+.instructions {
+    border-top: 1px solid #E3DDD7;
+    padding-top: 32px;
+}
+
+.instructions > ol {
+    padding-top: 24px;
+    padding-left: 24px;
+}
+
+.instructions > ol > li {
+    padding-left: 16px;
+    line-height: 1.5;
+    padding-bottom: 8px;
+}
+
+.instructions > ol > li:last-child {
+    padding-bottom: 32px;
+}
+
+.instructions > ol > li::marker {
+    color: var(--section-header);
+    font-weight: 600;
+}
+
+/* Nutrition section */
+.nutrition {
+    padding-top: 32px;
+    border-top: 1px solid #E3DDD7;
+    line-height: 1.5;
+}
+
+.nutrition > p {
+    padding: 24px 0px 24px;
+}
+
+.nutrition table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.nutrition tr {
+    border-bottom: 1px solid #E3DDD7;
+    height: 48px;
+}
+
+.nutrition tr:first-child {
+    height: 36px;
+}
+
+.nutrition tr:last-child {
+    border-bottom: none;
+    height: 36px;
+}
+
+.nutrient {
+    width: 50%;
+    padding-left: 32px;
+}
+
+.amount {
+    color: var(--section-header);
+    font-weight: bold;
+}
+
+/* Required Media Quieres for mobile view */
+@media screen and (max-width: 375px) {
+   #container {
+        margin: 0px auto 0 auto;
+        border-radius: 0;
+   }
+
+   #img-container {
+    padding: 0px;
+   }
+
+   #img-container > img {
+    border-radius: 0;
+   }
+
+   .padding {
+    padding: 0px 32px 0px;
+   }
+
+   .introduction {
+    padding: 0px 32px 0px;
+   }
+
+   .introduction > h1 {
+    font-size: 36px;
+    text-align: left;
+   }
+}

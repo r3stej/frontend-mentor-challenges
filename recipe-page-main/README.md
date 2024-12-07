@@ -18,8 +18,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Live solution preview
 
-- Live Site URL: [Netlify](https://674b494411373a55222e5e0c--papaya-concha-1ed703.netlify.app/)
-
+- Live Site URL: [Netlify](https://majestic-travesseiro-6f6f29.netlify.app/)
 ### Built with
 
 - HTML

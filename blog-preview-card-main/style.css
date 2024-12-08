@@ -1,0 +1,88 @@
+/* Required fonts */
+/* There is also font package available locally in the assets folder */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* Colors */
+:root {
+    --primary-font: #111111;
+    --secondary-font: #6B6B6B;
+    --background: #F4D04E;
+}
+
+body {
+    font-size: 1rem;
+    font-family: "Figtree", sans-serif;
+    color: var(--primary-font);
+    background-color: #F4D04E;
+}
+
+header, footer {
+    margin-top: 24px;
+}
+
+.card {
+    max-width: 384px;
+    margin: 219px auto 0 auto;
+    padding: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid var(--primary-font);
+    border-radius: 20px;
+    box-shadow: 8px 8px;
+}
+
+card > img {
+    border-radius: 10px;
+}
+
+.category {
+    background-color: var(--background);
+    font-size: 14px;
+    font-weight: bold;
+    width: 82px;
+    padding: 4px 12px;
+    border-radius: 4px;
+
+}
+
+.publish-date {
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+.title {
+    font-size: 24px;
+    margin: 12px 0;
+    transition: 0.3s;
+}
+
+.title:hover, .title:active, .title:focus {
+    color: var(--background);
+    cursor: pointer;
+}
+
+.description {
+    color: var(--secondary-font);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author > img {
+    width: 32px;
+    height: 32px;
+}
+
+.authorname {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--primary-font);
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        width: 327px;
+    }
+}

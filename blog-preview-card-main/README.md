@@ -18,7 +18,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Live solution preview
 
-- Live Site URL: [Netlify]
+- Live Site URL: [Netlify](https://mellow-manatee-4a793e.netlify.app/)
 ### Built with
 
 - HTML

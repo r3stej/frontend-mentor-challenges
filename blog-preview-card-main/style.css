@@ -51,6 +51,7 @@ card > img {
 
 .title {
     font-size: 24px;
+    font-weight: 800;
     margin: 12px 0;
     transition: 0.3s;
 }
@@ -61,6 +62,8 @@ card > img {
 }
 
 .description {
+    font-size: 16px;
+    font-weight: 500;
     color: var(--secondary-font);
 }
 
@@ -84,5 +87,9 @@ card > img {
 @media screen and (max-width: 375px) {
     .card {
         width: 327px;
+    }
+
+    .description {
+        font-size: 14px;
     }
 }

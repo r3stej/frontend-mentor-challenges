@@ -143,6 +143,7 @@ body {
 .ingredients > ul > li {
     padding-bottom: 8px;
     display: flex; /*For equal word-wrap purposes on smaller screens */
+    line-height: 1;
 }
 
 .ingredients > ul > li:last-child {

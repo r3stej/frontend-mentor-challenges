@@ -96,6 +96,7 @@ body {
 
 .introduction > p {
     padding: 24px 0px 32px;
+    line-height: 1.5;
 }
 
 .preparation-time {
@@ -143,7 +144,7 @@ body {
 .ingredients > ul > li {
     padding-bottom: 8px;
     display: flex; /*For equal word-wrap purposes on smaller screens */
-    line-height: 1;
+    line-height: 1.5;
 }
 
 .ingredients > ul > li:last-child {

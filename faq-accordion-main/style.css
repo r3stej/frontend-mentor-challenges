@@ -1,0 +1,209 @@
+/* Required fonts */
+/* There is also font package available locally in the assets folder */
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Colors */
+
+:root {
+    --bg-body-color: #F8EEFF;
+    --font-question-color: #301534; 
+    --font-answer-color: #8B6990;
+}
+
+body {
+    background-color: var(--bg-body-color);
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Background */
+
+.background {
+    background-image: url('./assets/images/background-pattern-desktop.svg');
+    background-size: cover;
+    height: 320px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Content related styles */
+
+.content {
+    background-color: #FFF;
+    padding: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 600px;
+    border-radius: 16px;
+    margin-top: 152.5px;
+    box-shadow: 0px 32px 56px rgba(80, 0, 118, .1);
+}
+
+.content > header {
+    margin-bottom: 32px;
+}
+
+
+.icon-star {
+    display: inline-block;
+    padding-right: 24px;
+}
+
+.icon-plus {
+    display: flex;
+    flex-shrink: 0; 
+    align-items: right; 
+    justify-content: right;
+    width: 30px;
+    height: 30px;
+}
+
+.content > header > h1 {
+    display: inline-block;
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--font-question-color);
+}
+
+.questions > ul {
+    list-style-type: none;
+}
+
+.question {
+    padding: 24px 0;
+    border-bottom: solid 1px var(--bg-body-color);
+}
+
+.question:first-child {
+    padding-top: 0;
+}
+
+.question:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.answer-box {
+    color: var(--font-answer-color);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.answer {
+    padding-top: 24px;
+}
+
+.accordion span {
+    margin-left: auto;
+}
+
+.accordion:link,
+.accordion:visited {
+    display: flex;
+    align-items: center; 
+    text-align: left;
+    flex-grow: 1;
+    width: 100%;
+    text-decoration: none;
+    color: var(--font-question-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.accordion:hover {
+    cursor: pointer;
+    color: #AD28EB;
+    transition: 0.3s ease-in-out;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+
+    .content {
+        max-width: 90%;
+        padding: 24px;
+    }
+
+    .question {
+        padding: 20px 0;
+    }
+
+    .icon-star img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .content > header {
+        margin-bottom: 24px;
+    }
+
+    .content > header > h1 {
+        font-size: 32px;
+    }
+
+    .accordion:link,
+    .accordion:visited {
+        font-size: 16px;
+    }
+
+    .accordion span {
+        margin-left: auto;
+    }
+
+    .answer {
+        padding-top: 14px;
+    }
+
+}
+
+
+@media screen and (max-width: 375px) {
+    .background {
+        background-image: url('./assets/images/background-pattern-mobile.svg');
+        max-width: 375px;
+    }
+
+    .content {
+        max-width: 327px;
+        padding: 24px;
+       
+    }
+
+    .question {
+        padding: 20px 0;
+    }
+
+    .icon-star img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .content > header {
+        margin-bottom: 24px;
+    }
+
+    .content > header > h1 {
+        font-size: 32px;
+    }
+
+    .accordion:link,
+    .accordion:visited {
+        font-size: 16px;
+    }
+
+    .accordion span {
+        margin-left: auto;
+    }
+
+    .answer {
+        padding-top: 14px;
+    }
+
+}
+

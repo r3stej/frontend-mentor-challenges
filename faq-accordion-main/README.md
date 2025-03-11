@@ -18,11 +18,12 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Live solution preview
 
-- Live Site URL: [Netlify](-)
+- Live Site URL: [Netlify](https://effervescent-kelpie-19ea4d.netlify.app/)
 ### Built with
 
 - HTML
 - Vanilla CSS
+- Vanilla JavaScript
 
 ## Author
 
